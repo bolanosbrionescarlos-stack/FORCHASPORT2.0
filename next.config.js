@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -9,9 +9,6 @@ const nextConfig = {
   },
   images: {
     domains: ['localhost', 'res.cloudinary.com', 'supabase.co'],
-  },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
   },
 }
 
