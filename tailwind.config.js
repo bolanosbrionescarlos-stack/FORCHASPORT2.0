@@ -33,6 +33,18 @@ module.exports = {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
         },
+        // Colores oficiales FORCHA SPORT
+        negro: {
+          DEFAULT: '#0B0D0F',
+          secundario: '#15191D',
+        },
+        'gris-grafito': '#252B30',
+        blanco: '#FFFFFF',
+        'gris-claro': '#F3F5F6',
+        'gris-secundario': '#687078',
+        'verde-lima': '#C7F000',
+        'verde-oscuro': '#527000',
+        rojo: '#D92D20',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -55,7 +67,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  darkMode: ['class'],
 }
 /** @type {import('tailwindcss').Config} */
 module.exports = {
