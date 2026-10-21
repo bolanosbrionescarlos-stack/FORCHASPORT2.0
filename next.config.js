@@ -4,11 +4,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  images: {
-    domains: ['localhost', 'res.cloudinary.com', 'supabase.co'],
+  webpack: (config) => {
+    config.resolve.alias['@'] = path.resolve(__dirname, './');
+    return config;
   },
 }
 
